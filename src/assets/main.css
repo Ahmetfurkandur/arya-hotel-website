@@ -1,5 +1,5 @@
 @import url('base.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *,
 *::before,
 *::after {
@@ -14,6 +14,7 @@
 html,
 body {
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {

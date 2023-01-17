@@ -1,7 +1,13 @@
 <template>
-  <router-view></router-view>
+  <NavbarMenu />
+  <router-view />
 </template>
 
 <script>
-export default {};
+import NavbarMenu from '@/components/NavbarMenu.vue';
+export default {
+  components: {
+    NavbarMenu,
+  },
+};
 </script>
