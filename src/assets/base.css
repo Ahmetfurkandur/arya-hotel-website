@@ -1,4 +1,12 @@
 :root {
   --bg-color-navbar: transparent;
-  --nav-item-text-color: #c4c4c4;
+  --bgcolor-navbar-active: #ffffff;
+  --forecolor-navbar-active: #000000;
+  --nav-item-text-color: #ffffff;
+  --nav-item-text-hover-color: #ffff66;
+  --active-nav-item-text-hover-color: #222222;
+  --contact-now-border-color: #fff;
+  --contact-now-bg-color: #fff;
+  --contact-now-text-color: #fff;
+  --contact-now-hover-text-color: #222;
 }

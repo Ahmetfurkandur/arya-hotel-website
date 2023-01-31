@@ -12,4 +12,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+#home-view {
+  overflow: auto;
+}
+</style>
