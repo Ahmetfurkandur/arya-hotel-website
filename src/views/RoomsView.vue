@@ -1,9 +1,20 @@
 <template>
-  <div>Odalar</div>
+  <RoomsSection>
+    <template #rooms>
+      <Room />
+    </template>
+  </RoomsSection>
 </template>
 
 <script>
-export default {};
+import RoomsSection from '@/components/RoomsSection.vue';
+import Room from '../components/Room.vue';
+export default {
+  components: {
+    RoomsSection,
+    Room,
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

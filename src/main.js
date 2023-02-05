@@ -3,7 +3,7 @@ import App from './App.vue';
 import router from './router';
 
 import '@popperjs/core';
-import './assets/main.css';
+import '@/assets/main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import { library } from '@fortawesome/fontawesome-svg-core';

@@ -55,7 +55,7 @@ export default {
       return;
     },
     updateNavbarOnScroll() {
-      if (window.scrollY >= 10) {
+      if (window.scrollY >= 100) {
         this.scrollPosition = true;
         return;
       }
@@ -84,7 +84,7 @@ header {
   background-color: var(--bg-color-navbar);
   z-index: 100;
   width: 100%;
-  height: 8rem;
+  height: 6rem;
   transition: 0.5s ease all;
   color: var(--nav-item-text-color);
 }
@@ -112,7 +112,8 @@ nav .link {
 nav li {
   text-transform: uppercase;
   padding: 0.25rem;
-  margin: 0.5rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
 }
 nav .link {
   font-family: 'Barlow Condensed', sans-serif;
@@ -128,7 +129,7 @@ nav .branding {
   align-items: center;
 }
 nav .branding img {
-  width: 150px;
+  width: 120px;
   transition: 0.5s ease all;
 }
 
@@ -152,6 +153,7 @@ nav .icon {
   top: 0;
   right: 1.6rem;
   height: 100%;
+  color: #fff;
 }
 
 nav .icon #inner-icon {
@@ -185,12 +187,16 @@ nav .dropdown-nav li .link {
 }
 
 .scroll-nav {
-  background-color: #f0f0f0;
+  background-color: #fff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
 }
 
 .scroll-nav nav .navigation li .link {
   color: #000;
+}
+
+.scroll-nav nav .navigation li .link:hover {
+  color: var(--nav-item-text-hover-color);
 }
 
 .scroll-nav nav .icon {

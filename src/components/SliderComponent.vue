@@ -1,43 +1,40 @@
-<!-- eslint-disable max-len -->
 <template>
-  <section>
-    <div id="carousel" class="carousel slide" data-bs-ride="true">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="carousel-control active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" class="carousel-control" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" class="carousel-control" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item min-vh-100 active">
-          <img src="@/assets/imgs/room-image-1.jpg" class="d-block w-100" />
-          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center w-100">
-            <h1 class="title">Arya Otel</h1>
-            <a class="contact-now" href="https://wa.me/905446255054?text=Merhaba,%20fiyat%20bilgisi%20alabilir%20miyim?">Hemen Ulaşın</a>
-          </div>
-        </div>
-        <div class="carousel-item min-vh-100">
-          <img src="@/assets/imgs/room-image-2.jpg" class="d-block w-100" />
-          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center w-100">
-            <h1 class="title">Arya Otel</h1>
-            <a class="contact-now" href="https://wa.me/905446255054?text=Merhaba,%20fiyat%20bilgisi%20alabilir%20miyim?">Hemen Ulaşın</a>
-          </div>
-        </div>
-        <div class="carousel-item min-vh-100">
-          <img src="@/assets/imgs/room-image-3.jpg" class="d-block w-100" />
-          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center w-100">
-            <h1 class="title">Arya Otel</h1>
-            <a class="contact-now" href="https://wa.me/905446255054?text=Merhaba,%20fiyat%20bilgisi%20alabilir%20miyim?">Hemen Ulaşın</a>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
+  <div id="carousel" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="carousel-control active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" class="carousel-control" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" class="carousel-control" aria-label="Slide 3"></button>
     </div>
-  </section>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="@/assets/imgs/room-image-1.jpg" class="d-block w-100" />
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center w-100">
+          <h2 class="title">Arya Otel</h2>
+          <a class="contact-now" href="https://wa.me/905446255054?text=Merhaba,%20fiyat%20bilgisi%20alabilir%20miyim?">Hemen Ulaşın</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="@/assets/imgs/room-image-2.jpg" class="d-block w-100" />
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center w-100">
+          <h2 class="title">Arya Otel</h2>
+          <a class="contact-now" href="https://wa.me/905446255054?text=Merhaba,%20fiyat%20bilgisi%20alabilir%20miyim?">Hemen Ulaşın</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="@/assets/imgs/room-image-3.jpg" class="d-block w-100" />
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center w-100">
+          <h2 class="title">Arya Otel</h2>
+          <a class="contact-now" href="https://wa.me/905446255054?text=Merhaba,%20fiyat%20bilgisi%20alabilir%20miyim?">Hemen Ulaşın</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
 </template>
 
 <script>
@@ -46,11 +43,10 @@ export default {};
 
 <style scoped>
 #carousel {
-  display: inline-block;
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
-  /* z-index: -1 !important; */
+  /* z-index: -5 !important; */
 }
 
 .carousel-control:hover {
@@ -66,6 +62,7 @@ export default {};
 
 .carousel-item img {
   height: 100vh !important;
+  object-fit: cover;
 }
 .title {
   font-family: 'Gilda Display', serif;
