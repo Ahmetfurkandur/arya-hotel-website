@@ -2,7 +2,9 @@
   <header :class="{ 'scroll-nav': scrollPosition }">
     <nav>
       <div class="branding">
-        <img src="@/assets/imgs/logo.png" />
+        <router-link class="link" :to="{ name: 'home' }">
+          <img src="@/assets/imgs/logo.png" />
+        </router-link>
       </div>
 
       <ul v-show="!mobile" class="navigation">
