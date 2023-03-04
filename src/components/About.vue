@@ -106,5 +106,9 @@ export default {};
   .container .about-image {
     margin: 50px 50px 50px 0;
   }
+
+  /* .container .about-image img {
+    width: 250px;
+  } */
 }
 </style>

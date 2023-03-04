@@ -1,9 +1,14 @@
 <template>
-  <div>İletişim</div>
+  <PageHeader :headerValues="{ caption: 'Bize Ulaşın', title: 'İletişim' }" />
 </template>
 
 <script>
-export default {};
+import PageHeader from '@/components/PageHeader.vue';
+export default {
+  components: {
+    PageHeader,
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

@@ -7,6 +7,11 @@
   </AboutSection>
 
   <RoomsSection>
+    <template #rooms-title>
+      <div class="title">
+        <h3>Odalarımız</h3>
+      </div>
+    </template>
     <template #rooms>
       <Room />
     </template>
@@ -31,4 +36,26 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.title {
+  width: 50%;
+  height: 5rem;
+}
+
+.title h3 {
+  font-family: 'Gilda Display', sans-serif;
+  font-size: 42px;
+  margin: 0;
+}
+
+@media (max-width: 425px) {
+  .title {
+    width: 60%;
+  }
+
+  .title h3 {
+    font-size: 36px;
+    margin: 0;
+  }
+}
+</style>

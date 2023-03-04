@@ -44,3 +44,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+.container {
+  width: 80% !important;
+}

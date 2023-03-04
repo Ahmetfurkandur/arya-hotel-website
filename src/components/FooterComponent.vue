@@ -5,9 +5,10 @@
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-sm">
             <h3 class="title">Arya Otel</h3>
+            <p>Rahat odalardaki birçok hoş ayrıntı konaklama yerinin konforunu arttırmaktadır.</p>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam perferendis dignissimos maiores at ratione, molestias, maxime aliquid quia ut perspiciatis, ullam
-              iste eveniet? Voluptatibus iure saepe reiciendis ullam consequatur. Error!
+              bir emanet bürosu, otel kasası, bir bankamatik, bir restoran, bir konferans salonu, bir ofis alanı ve bir çamaşırhane bulunmaktadır. Ortak alanlardaki kablosuz
+              internet bağlantısı mevcuttur.
             </p>
           </div>
           <div class="col m-5">
@@ -35,7 +36,10 @@
       </div>
     </div>
     <div class="bottom-footer d-flex justify-content-center align-items-center">
-      <p>&copy; Telif Hakkı 2023 Arya Otel | Bu web sitesi, Ahmet Furkan Dur tarafından yapılmıştır.</p>
+      <p>
+        Arya Otel | Bu web sitesi <a href="https://www.linkedin.com/in/ahmet-furkan-dur-2068b8214/" class="developer-link">Ahmet Furkan Dur</a> Tarafından kuruldu. |
+        <a href="https://storyset.com/web" class="illustrations-attribute-link">Web illustrations by Storyset</a>
+      </p>
     </div>
   </footer>
 </template>
@@ -102,9 +106,35 @@ footer .top-footer .menu-list li .link {
   font-family: 'Barlow Condensed', sans-serif;
 }
 
+.developer-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.illustrations-attribute-link {
+  text-decoration: none;
+  color: #666;
+}
+
 footer .bottom-footer {
   height: 20%;
   background-color: #1a1a1a;
   font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: 700px;
+  }
+
+  .row {
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 425px) {
+  footer {
+    height: 900px;
+  }
 }
 </style>
